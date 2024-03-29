@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical">
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/NBR1"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:background="@android:color/white"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:hint="@string/enter_nbr1"
+                    android:enabled="false" android:autofillHints=""
+                    />
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/NBR2"
+                    android:layout_weight="1"
+                    android:minHeight="48dp"
+                    android:background="@android:color/white"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:enabled="false"
+                    android:hint="@string/enter_nbr2" android:autofillHints=""/>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/OKReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/okReturn"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="#007bff"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+               />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

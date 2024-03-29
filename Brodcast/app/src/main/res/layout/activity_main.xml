@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="110dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical"
+              android:gravity="center">
+
+    <Button
+            android:text="@string/diffusion_via_intent"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnBroadcastViaIntent" android:layout_weight="1"/>
+
+    <Button
+            android:text="@string/activit_planifi_reception_dynamique"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnDynamicBroadcastRecViaAlarm" android:layout_weight="1"/>
+    <Button
+            android:text="@string/activit_planifi_reception_statique"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnXMLStaticBroadcastRecViaAlarm" android:layout_weight="1"/>
+
+
+
+
+</LinearLayout>
