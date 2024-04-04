@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -15,9 +14,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        // Initialize the TextView
         textView = findViewById(R.id.textView)
+        textView.visibility = TextView.INVISIBLE
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -28,23 +26,22 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_item1 -> {
-                showToast("Item 1 clicked")
+                displayMessage("Home Clicked")
                 true
             }
             R.id.action_item2 -> {
-                showToast("Item 2 clicked")
+                displayMessage("Main Clicked")
                 true
             }
             R.id.action_item3 -> {
-                showToast("Item 3 clicked")
+                displayMessage("Contact Clicked")
                 true
             }
             else -> super.onOptionsItemSelected(item)
         }
     }
 
-    private fun showToast(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    private fun displayMessage(message: String) {
         textView.text = message
         textView.visibility = TextView.VISIBLE
     }
